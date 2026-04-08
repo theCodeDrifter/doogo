@@ -19,6 +19,7 @@
     },
     "ios": {
       "supportsTablet": false,
+      "bundleIdentifier": "com.palipali.doogo",
       "infoPlist": {
         "NSPhotoLibraryUsageDescription": "Doogo needs access to your photos for uploading.",
         "NSCameraUsageDescription": "Doogo needs camera access for uploading images.",
@@ -26,6 +27,7 @@
       }
     },
     "android": {
+      "package": "com.palipali.doogo",
       "permissions": [
         "android.permission.INTERNET",
         "android.permission.READ_EXTERNAL_STORAGE",

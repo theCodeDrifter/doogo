@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Doogo",
+    "slug": "doogo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/doogo_logo.png",
+    "scheme": "doogo",
+    "userInterfaceStyle": "light",
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff",
+      "barStyle": "dark-content"
+    },
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/doogo_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#e6fffa"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Doogo needs access to your photos for uploading.",
+        "NSCameraUsageDescription": "Doogo needs camera access for uploading images.",
+        "NSMicrophoneUsageDescription": "Doogo needs microphone access for video uploads."
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.CAMERA",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/doogo_logo.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/doogo_logo.png",
+          "color": "#e6fffa"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
